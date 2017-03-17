@@ -23,4 +23,5 @@ public interface UserService {
 	ShopResult createUser(TbUser user);
 	ShopResult userLogin(String username, String password, HttpServletRequest request, HttpServletResponse response);
 	ShopResult getUserByToken(String token);
+	ShopResult userLogout(String token);
 }
